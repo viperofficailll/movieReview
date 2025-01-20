@@ -6,6 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $id = $_POST['id'];
     $rating = $_POST['rating'];
     $review = $_POST['review'];
+    echo('hello world')
 
     // Get the current rating and number of reviews from the database
     $sql = "SELECT rating, num_reviews FROM movieinfo WHERE id = $id";
